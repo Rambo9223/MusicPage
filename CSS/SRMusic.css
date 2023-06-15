@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap');
+
+/*Common elements */
+body{
+    background-color: black;
+    color: azure;
+    font-family: 'Adamina', serif;
+    height: 100vh;
+    overflow-x: hidden;
+    width:100%;
+    
+}
+.nav-bar{
+    background-color: black;
+    display:flex;
+    height: 15%;
+    overflow: hidden;
+    position:fixed;
+    right: 0;
+    top: 0 ;
+    width:100%;
+    z-index: 2;
+}
+nav{
+    display:block;
+    font-family: 'IBM PLex Mono',monospace;
+    font-weight:bolder;
+    margin: auto;
+    padding-bottom: 20px;
+    text-decoration: none;
+    width:100%;
+    z-index: 2;
+}
+nav a{  
+    color:rgb(202, 202, 255);
+    font-size: 36px;
+    position: relative;
+    text-decoration: none;
+    top:-15px;
+}
+nav a:hover{
+    color: white;
+    font-size: 42px;
+    text-decoration: underline solid;
+}
+a:visited{text-decoration: none;}
+
+.pages{
+    display: inline-block;
+    left: 10%;
+    margin: auto;
+    position: absolute;
+    
+}
+.pages a {
+    padding: 0 30px ;
+}
+.links{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top: 150px;
+    z-index: 1;
+    }
+.links a{
+    color: aliceblue;
+    font-size: 22px;
+    text-decoration: none;
+}
+li{
+    
+    display: inline-flex;
+    font-size: 18px;
+    padding: 20px;
+}
+li img{
+    
+    position: relative;
+    top: 5px;
+}
+#TikTok{
+    position: relative;
+    right: 5px;
+    top: 10px;
+    }
+
+/* Headers Gallery & */
+/* Home Page Elements*/
+
+#background-1{
+    margin: auto;
+    overflow: hidden;
+    position: absolute;
+    right:0;
+    top: -200px;
+    width: 100%;
+    z-index: -1;
+    
+}
+.home-content{
+    left: 180px;  
+    margin: auto;
+    min-width: 20%;
+    position: relative;
+    text-align: center;
+    top: 150px;
+    width: 50%;
+    z-index: 1;
+}
+.home-content > p{
+    text-align: justify;
+}
+#video{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top:0;
+    z-index: 1;
+    
+}
+
+/*Booking Page Elements*/
+
+#background-right{
+    left: -1850px;
+    margin:auto;
+    overflow: visible;
+    position: absolute;
+    right: 0px;
+    top: -150px;
+    width:100%;
+    z-index: -1;
+    
+}
+
+.calendar{
+    background-image: linear-gradient(to bottom, rgb(48, 44, 88),transparent );
+    border: 2px solid rgb(94, 94, 94);
+    color: rgb(215, 239, 250);
+    margin: auto;
+    position: relative;
+    right: 400px;
+    top:200px;
+    width: fit-content;
+}
+.calendar > h2{
+    font-size: 26px;
+    text-align: center;
+    
+}
+.calendar table{
+    text-align: center;
+    
+}
+.calendar th{
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+.calendar td{
+    font-size: 18px;
+    padding: 10px;
+}
+.booking{
+    left: 400px;
+    margin: auto;
+    position: relative;
+    top:-380px;
+    
+
+}
+.form{
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(192, 187, 250),transparent);
+    border: 2px solid rgb(91, 90, 90);
+    color:  rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin:auto;
+    max-width:300px;
+    min-width:100px;
+    padding-bottom: 1em;
+    width:100vw;
+}
+.form label{
+    display:block;
+    margin: 0.5rem 0
+}
+.links-booking{
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top: -50px;
+    z-index: 1;
+    }
+
+.links-booking a{
+    background-image:repeating-linear-gradient(to right,transparent,#5e449b,transparent);
+    color: aliceblue;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.input-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+/*Subscribe Page Elements*/
+#background-right-smaller{
+    left: 100px;
+    margin:auto;
+    overflow: visible;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    width:100%;
+    z-index: -1;
+    
+}
+.subscription{
+    left:250px;
+    margin: auto;
+    position: relative;
+    top: 100px;
+}
+.subscription-form{
+    align-items: center;
+    border: 2px solid rgb(91, 90, 90);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    max-width:300px;
+    min-width:100px;
+    padding-bottom: 1em;
+    width:100vw;
+}
+.subscription-form label{display:block;
+margin: 0.5rem 0}
+
+.subscription-form input {
+margin:10px 0 0 0;}
+
+.feedback-form{
+    align-items: center;
+    border: 2px solid rgb(91, 90, 90);
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; 
+    max-width:300px;
+    min-width:100px;
+    padding-bottom: 1em;
+    width:100vw;
+}
+.feedback-form label{
+    display:block;
+    margin: 0.5rem 0;
+    text-align: center;}
+.feedback-form textarea{
+    width: 200px;
+}
+#feedback{
+    left: 250px;
+    margin: auto;
+    position: relative;
+    top:150px
+}
+
+
+/*Gallery Page*/
+#background-gallery{
+
+background-color: aliceblue;
+margin: auto;
+width: 100%;
+z-index: -1;
+}
+
+#gallery-content{
+    padding-top: 100px;
+    text-align: center;
+}
+
+#gallery-content h2{
+    color: black;
+    font-size: 36px;
+}
+
+.gallery{
+    
+    border: 5px solid black;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.image-wrap{
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    margin: 10px;
+    padding-top: 30px;
+    width: calc(50%-20px);
+}
+
+.gallery-image{
+    
+    display: block;
+    height:100%;
+    object-fit:fill;
+    position: relative;
+    width: auto;
+}
+
+.interact{
+    
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+
+/*To add - 
+breakpoints nav bar / gallery images + videos*/
+
+/*Unused/Depreciated Elements*/
+/*
+.content{
+    z-index: 1;
+    text-align: center;
+    width: 60%;
+    min-width: 20%;
+    margin: auto;
+    position: relative;
+    top: 150px;
+}
+*/

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="./CSS/SRMusic.css" rel="stylesheet">
+    
+    <!--Contents Of homepage
+    Nav Bar(Home,About me,Booking,Subscribe,)Fixed, Testimonials, Embedded Video, Links to socials-->
+    <title>SRMusic Subscribe</title>
+  </head>
+  <body onload="">
+   
+    <header>
+        <div class = "nav-bar">
+            <nav>
+                <div class="pages">
+                <a href="SRMusic-Homepage.html">Home</a>
+                <a href="SRMusic-Calendar-Booking-Page.html">Booking</a>
+                <a href="SRMusic-Subscription-Page.html">Subscribe</a>
+                <a href="SRMusic-Gallery-Page.html">Gallery</a>
+                <a href="SRMusic-Save-For-Later.html">Saved Items</a>
+              </div>
+            </nav>
+        </div>
+    </header>
+    <main id="subscribe">
+      <!--Background Image-->
+      <div id="background-right-smaller">
+        <img src="./Images/CC2A0054.png" alt="" height="888" width="1332">
+    </div>
+    <!--Subscription Form-->
+        <section class="subscription">
+          <h2>Subscribe to stay up to date with the latest shows and releases!</h2>
+          <form id="sub-form" action="get" method="post">
+          <div class="subscription-form">
+            <div>
+                <h1 class="header" >Subscrption Form</h1>
+              </div>
+            <div class="input">
+                <label for="subscribe-name" class="text">Your Name:</label>
+                <input type="text" placeholder="Enter your name" class="name" name="name"  maxlength="100" id="subscribe-name" required>
+            </div>
+            <div class="input">
+                <label for="subscribe-age" class="formbuilder-number-label">Age:</label>
+                <input type="text" placeholder="Age" class="age" name="number" pattern="[0-9]{2,3}" id="subscribe-age" required>
+            </div>
+            <div class="input">
+                <label for="subscribe-email" class="formbuilder-text-label">Email:</label>
+                <input type="email" placeholder="Enter your email" class="email" name="email"  id="subscribe-email" required>
+            </div>
+            <div class="input">
+                <label  class="checkbox-group-label">Notify me of:</label>
+                <div class="checkbox-group">
+                    <div class="formbuilder-checkbox">
+                        <input name="checkbox-group[]"  id="subscribe-release" value="Option-1 " type="checkbox" checked="checked">
+                        New Releases
+                    </div>
+                    <div class="formbuilder-checkbox">
+                        <input name="checkbox-group[]" id="subscribe-show" value="Option-2" type="checkbox" checked="checked">
+                        Shows in my area
+                    </div>
+                </div>
+            </div>
+            <div class="submit">
+                <button type="button" class="button" name="button"  id="subscriber-button" onclick="subscriber()">Submit</button>
+            </div>
+        </div>
+      </form>
+        </section>
+        <section id="feedback">
+          <form id="feedback-form" action="get" method="post">
+          <h2>Leave me any feedback!</h2>
+          <div class="feedback-form">
+            <div>
+                <h1 class="header">Feedback</h1>
+              </div>
+            <div class="input">
+                <label for="feedback-name" class="text">Your Name:</label>
+                <input type="text" placeholder="Enter your name" class="name" name="name"  maxlength="100" id="feedback-name" required>
+            </div>
+            <div class="input">
+              <label for="user-feedback" class="text">Your Feedback/Comments</label>
+              <textarea id="user-feedback" placeholder="Please leave any feedback/comments." maxlength="500" rows="4"></textarea>
+            </div>
+            <div class="submit">
+                <button type="button" class="button" name="button"  id="feedback-button" onclick="feedback()">Leave Feedback</button>
+            </div>
+        </div>
+      </form>
+        </section>
+    </main>
+    <footer>
+      <!--Social Media Links-->
+      <section class="links">
+        <ul>
+          <li><h3>Find me on:</h3></li>
+            <li><a href="https://www.facebook.com/SRMusicman92/">Facebook<span class="line-up"><img src="./Images/1024px-Facebook_Logo_(2019).png" height="40" width="40" alt="Facebook Logo"></span></a></li>
+            <li><a href="/https://www.instagram.com/scottramsaymusic/">Instagram<span class="line-up"><img src="./Images/IG.png" height="40" width="40" alt="IG Logo"></span></a></li>
+            <li><a href="https://www.youtube.com/channel/UCp1oMKsRWgW_4mrxBVHU6fQ">YouTube<span class="line-up"><img src="./Images/YouTube.png" height="40" width="40" alt="YouTube Logo"></span></a></li>
+            <li><a href="https://open.spotify.com/artist/5amvcNRKuyKg7gff03D0qr?si=SshMOWaPQIKNWuun5N6k3g">Spotify<span class="line-up"><img src="./Images/file-spotify-logo-png-4.png" height="40" width="40" alt="Spotify Logo"></span></a></li>
+            <li><a href="https://www.tiktok.com/@scottramsaymusic">TikTok<span class="line-up"><img id="TikTok" src="./Images/TikTok-Transparent.png" height="55" width="55" alt="TikTok Logo"></span></a></li>
+            <li><a href = mailto:srmusic2020@hotmail.com >Email Me<span class="line-up"><img src="./Images/email-309491_960_720.png" height="40" width="40" alt="Email Logo"></span></a></li>
+        </ul>
+    </section>
+    </footer>
+    <script src="./JS/SRMusic.js"></script>
+  </body>
+</html>
